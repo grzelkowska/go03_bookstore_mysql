@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/grzelk/03go_bookstore_mysql/pkg/controllers"
+	"github.com/grzelkowska/11projects/03go_bookstore_mysql/pkg/controllers"
 	"github.com/gorilla/mux"
 )
 
