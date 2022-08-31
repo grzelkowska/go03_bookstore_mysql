@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	// "github.com/grzelkowska/11projects/03go_bookstore_mysql/pkg/routes"
-	"github.com/grzelkowska/go03_bookstore_mysql/pkg/routes"
+	"github.com/grzelkowska/11projects/03go_bookstore_mysql/pkg/routes"
+	// "github.com/grzelkowska/go03_bookstore_mysql/pkg/routes"
 )
 
 func main(){
