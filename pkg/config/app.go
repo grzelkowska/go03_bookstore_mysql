@@ -2,11 +2,11 @@ package config
 
 import (
 	"fmt"
-	"os"
+	// "os"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 )
 
 var (
@@ -14,12 +14,12 @@ var (
 )
 
 func Connect() {
-	err := godotenv.Load(".env")
-	if err != nil {
-		fmt.Println("Could not load .env file")
-	}
-	password := os.Getenv("USER_PASSWORD")
-	d, err := gorm.Open("mysql", "philliplee515@gmail.com:"+password+"@/simplerest?charset=utf8&parseTime=True&loc=Loca")
+	// err := godotenv.Load(".env")
+	// if err != nil {
+	// 	fmt.Println("Could not load .env file")
+	// }
+	// password := os.Getenv("USER_PASSWORD")
+	d, err := gorm.Open("mysql", "user@tcp(127.0.0.1:3306)@/simplerest?charset=utf8&parseTime=True&loc=Loca")
 	if err != nil {
 		panic(err)
 	}
