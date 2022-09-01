@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
+	
 	"github.com/grzelkowska/11projects/go03_bookstore_mysql/pkg/models"
 	"github.com/grzelkowska/11projects/go03_bookstore_mysql/pkg/utils"
 )
@@ -58,7 +59,7 @@ func DeleteBook(w http.ResponseWriter, r *http.Request) {
 	w.Write(res)
 }
 
-func UpdataBook(w http.ResponseWriter, r *http.Request) {
+func UpdateBook(w http.ResponseWriter, r *http.Request) {
 	var updateBook = &models.Book{}
 	utils.ParseBody(r, updateBook)
 	vars := mux.Vars(r)

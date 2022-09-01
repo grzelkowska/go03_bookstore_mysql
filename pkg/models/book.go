@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/grzelkowska/11projects/03go_bookstore_mysql/pkg/config"
+	"github.com/grzelkowska/11projects/go03_bookstore_mysql/pkg/config"
 	"github.com/jinzhu/gorm"
 )
 
